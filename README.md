@@ -1,6 +1,6 @@
 # Domain Scanning Tool
-
-A tool for domain bulk scanning based on SOA record. It can be used to find nice domain hacks at high speed.
+###  <p><b><a href="README_CN.md">简体中文</a></b></p>
+An efficient multithreaded domain registration scanning tool. based on SOA record. It can be used to find nice domain hacks at high speed.
 
 Its features include:
 
@@ -15,19 +15,18 @@ Its features include:
 
 To use this tool, simple run:
 
+```bash
+git clone https://github.com/loveoranges/DomainScanTool.git
+cd DomainScanTool
+python DomainScanTool.py 8.8.8.8 com dictionary.txt results.txt y
 ```
-git clone https://github.com/dynos01/DomainScanningTool
-cd DomainScanningTool
-python DomainScanningTool.py
+or 
+```bash
+python DomainScanTool.py "8.8.8.8:53,8.8.4.4:53" "com,net" dictionary.txt results.txt y
 ```
 
-Server addresses are like these: `8.8.8.8:53`, `1.1.1.1:53, [2001:4860:4860::8888]:53`
-
-Suffixes are like these: `com`, `com, net` (e.g. without the dot)
 
 
-
-The example dictionary `LLL.txt` contains all combinations of there letters. You can use your own dictionary instead.
 
 
 
